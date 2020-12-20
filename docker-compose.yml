@@ -2,7 +2,6 @@ wizzle-mysql:
   image: mysql:5.7
   container_name: wizzle-mysql
   volumes:
-    - ./mysql/data:/var/lib/mysql
     - ./mysql/my.cnf:/etc/mysql/my.cnf
     - ./mysql/init/init.sql:/tmp/init.sql
   command: "--init-file /tmp/init.sql"
